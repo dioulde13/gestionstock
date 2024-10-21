@@ -17,6 +17,7 @@ public class FournisseurDto {
     private String photo;
     private String email;
     private String telephone;
+    private Integer idEntreprise;
     private List<CommandeFournisseurDto> commandefournisseur;
 
     // Méthode pour convertir un Fournisseur en FournisseurDto

@@ -15,6 +15,7 @@ public class LigneDeVenteDto {
     private VenteDto vente;
     private String code;
     private BigDecimal quantite;
+    private Integer idEntreprise;
     private BigDecimal prixUnitaire;
 
     // Méthode pour convertir un LigneDeVente en LigneDeVenteDto

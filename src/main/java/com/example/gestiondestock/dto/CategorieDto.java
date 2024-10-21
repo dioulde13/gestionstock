@@ -17,6 +17,8 @@ public class CategorieDto {
 
     private String designation;
 
+    private Integer idEntreprise;
+
     private List<ArticleDto> articles;
 
     public static CategorieDto fromEntity(Categorie categorie) {
@@ -27,6 +29,7 @@ public class CategorieDto {
                 .id(categorie.getId())
                 .codeCategorie(categorie.getCodeCategorie())
                 .designation(categorie.getDesignation())
+                .idEntreprise(categorie.getIdEntreprise())
                 .articles(categorie.getArticles() != null ?
                         categorie.getArticles().stream()
                                 .map(ArticleDto::fromEntity)
@@ -41,6 +44,7 @@ public class CategorieDto {
         Categorie categorie = new Categorie();
         categorie.setId(categorieDto.getId());
         categorie.setCodeCategorie(categorieDto.getCodeCategorie());
+        categorie.setIdEntreprise(categorieDto.getIdEntreprise());
         categorie.setDesignation(categorieDto.getDesignation());
         // Pas besoin de mapper les articles ici si vous n'avez pas besoin d'une relation inverse
         return categorie;

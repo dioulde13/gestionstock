@@ -17,7 +17,9 @@ public class VenteDto {
     private List<LigneDeVenteDto> ligneDeVenteList;
     private String code;
     private Date dateVente;
+    private Integer idEntreprise;
     private String commentaire;
+    private  List<LigneDeVenteDto> ligneDeVente;
 
     // Méthode pour convertir une entité Vente en VenteDto
     public static VenteDto fromEntity(Vente vente) {

@@ -15,5 +15,4 @@ public class CategorieValidator {
         }
         return errors;
     }
-
 }

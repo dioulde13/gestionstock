@@ -14,6 +14,7 @@ public class LigneCommandeClientDto {
     private CommandeCLientDto commandeclient;
     private ArticleDto article;
     private BigDecimal quantite;
+    private Integer idEntreprise;
     private BigDecimal prixUnitaire;
 
     // Méthode pour convertir un LigneCommandeClient en LigneCommandeClientDto

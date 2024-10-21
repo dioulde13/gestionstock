@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Builder
 @Data
-public class AdresseDto {
+public class AdresseDto extends Adresse {
 
     private String adresse1;
 

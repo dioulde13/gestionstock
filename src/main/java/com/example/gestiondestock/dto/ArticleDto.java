@@ -14,6 +14,8 @@ public class ArticleDto {
 
     private String designation;
 
+    private Integer idEntreprise;
+
     public static ArticleDto fromEntity(Article article) {
         if (article == null) {
             return null;
@@ -22,6 +24,7 @@ public class ArticleDto {
                 .id(article.getId())
                 .codeArticle(article.getCodeArticle())
                 .designation(article.getDesignation())
+                .idEntreprise(article.getIdEntreprise())
                 .build();
     }
 
@@ -32,6 +35,7 @@ public class ArticleDto {
         Article article = new Article();
         article.setId(articleDto.getId());
         article.setCodeArticle(articleDto.getCodeArticle());
+        article.setIdEntreprise(articleDto.getIdEntreprise());
         article.setDesignation(articleDto.getDesignation());
         return article;
     }

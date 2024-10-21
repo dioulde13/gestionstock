@@ -14,6 +14,7 @@ public class LigneCommandeFournisseurDto {
     private ArticleDto article;
     private CommandeFournisseurDto commandefournisseur;
     private BigDecimal quantite;
+    private Integer idEntreprise;
     private BigDecimal prixUnitaire;
 
     // Méthode pour convertir un LigneCommandeFournisseur en LigneCommandeFournisseurDto

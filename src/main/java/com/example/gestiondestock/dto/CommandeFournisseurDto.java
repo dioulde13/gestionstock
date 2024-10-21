@@ -5,15 +5,25 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 @Builder
 @Data
 public class CommandeFournisseurDto {
 
     private Integer id;
+
     private String code;
+
+    private Integer idEntreprise;
+
     private Date dateCommandeFrs;
+
     private FournisseurDto fournisseur;
+
+    private List<LigneCommandeFournisseurDto> ligneCommandeFournisseur;
+
+
 
     // Méthode pour convertir un CommandeFournisseur en CommandeFournisseurDto
     public static CommandeFournisseurDto fromEntity(CommandeFournisseur commandeFournisseur) {

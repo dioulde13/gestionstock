@@ -19,7 +19,7 @@ import java.util.List;
 public class Vente extends AbstractEntity{
 
     @OneToMany(mappedBy = "vente")
-    private List<LigneDeVente> ligneDeVenteList;
+    private List<LigneDeVente> ligneDeVente;
     @Column(name = "code")
     private String code;
     @Column(name = "datecommande")

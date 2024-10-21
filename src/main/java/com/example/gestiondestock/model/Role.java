@@ -9,12 +9,16 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "roles")
-public class Role extends AbstractEntity{
+public class Role {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     @Column(name = "rolename")
-    private String roleName;
+    @Enumerated(EnumType.STRING)
+    private TypeRole roleName;
     @Column(name = "datecommande")
     private Date dateCommande;
     @ManyToOne

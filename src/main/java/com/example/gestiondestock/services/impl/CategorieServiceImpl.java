@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @Service
 public class CategorieServiceImpl implements CategorieService {
-    private CategorieRepository categorieRepository;
+    private final CategorieRepository categorieRepository;
 
     @Autowired
     public CategorieServiceImpl(CategorieRepository categorieRepository){
@@ -63,7 +63,6 @@ public class CategorieServiceImpl implements CategorieService {
         // Ajouter le message de log dans les en-têtes HTTP
         HttpHeaders headers = new HttpHeaders();
         headers.add("X-Log-Message", logMessage);
-
         return new ResponseEntity<>(categorieDto, headers, HttpStatus.OK).getBody();
     }
 

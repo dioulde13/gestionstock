@@ -16,6 +16,7 @@ public class MvtstkDto {
     private Instant dateMvt;
     private BigDecimal quantite;
     private ArticleDto article;
+    private Integer idEntreprise;
     private TypeMvtStk typemvt;
 
     // Méthode pour convertir un MvtStk en MvtstkDto

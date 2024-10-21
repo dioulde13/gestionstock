@@ -12,13 +12,21 @@ import java.util.List;
 public class EntrepriseDto {
 
     private Integer id;
+
     private String nom;
+
     private AdresseDto adresse;
+
     private String prenom;
+
     private String photo;
+
     private String email;
+
     private String telephone;
-    @JsonIgnore
+
+    private Integer idEntreprise;
+
     private List<UtilisateurDto> utilisateurList;
 
     // Méthode pour convertir un Entreprise en EntrepriseDto
